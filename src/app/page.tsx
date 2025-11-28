@@ -127,7 +127,10 @@ export default function AudioTherapyLanding() {
                   {item.label}
                 </button>
               ))}
-              <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full text-sm font-medium hover:shadow-lg transition-all hover:scale-105">
+              <button
+                onClick={() => scrollToSection('tracks')}
+                className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full text-sm font-medium hover:shadow-lg transition-all hover:scale-105"
+              >
                 Acessar Agora
               </button>
             </div>
@@ -161,7 +164,10 @@ export default function AudioTherapyLanding() {
                 </button>
               ))}
               <div className="px-4 py-2">
-                <button className="w-full px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full text-sm font-medium">
+                <button
+                  onClick={() => scrollToSection('tracks')}
+                  className="w-full px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full text-sm font-medium"
+                >
                   Acessar Agora
                 </button>
               </div>
@@ -206,7 +212,10 @@ export default function AudioTherapyLanding() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center space-x-2 text-sm sm:text-base">
+                <button
+                  onClick={() => scrollToSection('tracks')}
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center space-x-2 text-sm sm:text-base"
+                >
                   <span>Quero Meus Áudios Terapia</span>
                   <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
@@ -842,7 +851,10 @@ export default function AudioTherapyLanding() {
             </p>
           </div>
           
-          <button className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium text-base sm:text-lg hover:shadow-xl transition-all hover:scale-105 overflow-hidden">
+          <button
+            onClick={() => scrollToSection('tracks')}
+            className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium text-base sm:text-lg hover:shadow-xl transition-all hover:scale-105 overflow-hidden"
+          >
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="relative">Quero Meus Áudios Terapia agora</span>
             <ChevronRight className="relative inline-block w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
